@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { AppBar, Toolbar, Typography } from '@mui/material';
+import DirectionStack from './Components/DirectionStack'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppBar position="relative" color="primary">
+        <Toolbar>
+          <Typography variant="h6">
+            SelfDashboard
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <DirectionStack>
+      </DirectionStack>
     </div>
   );
 }
