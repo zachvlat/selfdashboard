@@ -1,0 +1,21 @@
+[build]
+  command = "CI=false npm run build"
+  publish = "/opt/build/repo/build"
+
+[context.production.environment]
+  NODE_VERSION = "14"  # Replace with your preferred Node.js version
+
+[context.branch-deploy]
+  command = "CI=false npm run build"
+  publish = "/opt/build/repo/build"
+
+[context.deploy-preview]
+  command = "CI=false npm run build"
+  publish = "/opt/build/repo/build"
+
+[context.next.environment]
+  NODE_VERSION = "14"  # Replace with your preferred Node.js version
+
+[context.next.build]
+  command = "CI=false npm run build"
+  publish = "/opt/build/repo/build"
